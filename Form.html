@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Feedback Page</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="form.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		
+		<script language="JavaScript">
+    <!--
+    function submitForm(){
+      if(document.myForm.myText.value == ""){
+        alert("Please enter some text first");
+      }else{
+        document.myForm.mySubmit.click();
+      }
+    }
+    -->
+    </script>
+		
+	</head>
+	<body>
+	
+	<div class="container">
+	<form action="connect.php" method="post">
+	
+  
+  
+  <form name="registration" class="registartion-form" onsubmit="return formValidation()" action= "mailto:gmakwali@gmail.com" >
+    <table>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" name="name" id="name" placeholder="your name"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="text" name="email" id="email" placeholder="your email"></td>
+      </tr>
+      <tr>
+        <td><label for="">Type of plot:</label></td>
+        <td><input type="" name="" id=""></td>
+      </tr>
+	   <tr>
+        <td><label for="residence">Place of residence:</label></td>
+        <td><input type="residence" name="residence" id="residence"></td>
+      </tr>
+	  	   <tr>
+        <td><label for="application">Place of Application:</label></td>
+        <td><input type="application" name="application" id="application"></td>
+      </tr>
+      <tr>
+        <td><label for="phoneNumber">Phone Number:</label></td>
+        <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+      </tr>
+	   <tr>
+        <td><label for="plots allocated">No of plots allocated before:</label></td>
+        <td><input type="plots" name="plots id="phoneNumber"></td>
+      </tr>
+      <tr>
+        <td><label for="gender">Gender:</label></td>
+        <td>Male: <input type="radio" name="gender" value="male">
+          Female: <input type="radio" name="gender" value="female">
+          Other: <input type="radio" name="gender" value="other"></td>
+      </tr>
+      <tr>
+        <td><label for="status">MARITAL STATUS</label></td>
+        <td>
+          <select name="status" id="status">
+            <option value="">Select your relationship status</option>
+            <option value="English">Single</option>
+            <option value="Spanish">Married</option>
+            <option value="Hindi">Divorced</option>
+            <option value="Arabic">Widowed</option>
+            
+          </select>
+        </td>
+      </tr>
+    
+      <span>
+	File Upload
+  <input 
+    type="file"
+    id="photo" 
+    name="photo"
+    accept="image/png, image/jpeg">
+</span>
+      <tr>
+        <td colspan="2"><input type="submit" class="submit" value="submit"/></td>
+		
+      </tr>
+    </table>
+  </form>
+ 
+</div>
+
+</body>
+
+</html>

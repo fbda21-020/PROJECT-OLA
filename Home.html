@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Feedback Page</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="home.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<style>
+    /* Styles for screens with a maximum width of 600px */
+    @media screen and (max-width: 600px) {
+      body {
+        background-color: lightblue;
+      }
+    }
+
+ 
+
+    /* Styles for screens with a width between 601px and 1200px */
+    @media screen and (min-width: 601px) and (max-width: 1200px) {
+      body {
+        background-color: lightgreen;
+      }
+    }
+
+ 
+
+    /* Styles for screens with a width greater than 1200px */
+    @media screen and (min-width: 1201px) {
+      body {
+        background-color: lightyellow;
+      }
+    }
+      </style>
+	</head>
+	<body>
+		<div class="div1">
+			 <img src="Images/coa.png" width= "200" alt="Botswana coat of arms">
+		</div>
+		<div id="navbar">
+			 <img src="Images/logo.png" width="200" >
+		<div id="navbar-right">
+			<input type="text" placeholder="Search.." name="search">
+		</div>
+		<div class="pill-nav">
+			<a href="Home.html">Home</a>
+			<a href="Contact.html">Contact Us</a>
+			<a href="Discover.html">Discover</a>
+			<a href="Help.html">Help</a>
+			<a href="Feedback.html">Feedback</a>
+		</div>
+			
+		<div>
+			<img src="Images/maps.png" alt="MAP" class="mape">
+		</div>
+		<div>
+			<button class="butto" onclick="document.getElementById('id01').style.display='block'">APPLY NOW</button>
+
+		<div id="id01" class="modal">
+  
+	<form class="modal-content animate" action="/action_page.php" method="post">
+			<div class="container">
+			<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Email or Phone Number" name="uname" required>
+
+			<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Password" name="psw" required>
+			
+			<button type="submit" class="logbut">
+				<a href="Form.html">Log In</a>
+			</button>
+			<label>
+				<a href="ForgotPassword.html">Forgot password?</a>
+			</label>
+		</div>
+
+		<div class="container" style="background-color:#f1f1f1">
+			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="newacct">
+			<a href="CreateAcc.html">Create a new account</a>
+			</button> 
+		</div> 
+	</form>
+		</div>
+
+	<script>
+
+	var modal = document.getElementById('id01');
+
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+	</script>
+
+		</div>
+	</body>
+		
+	<footer class="footer">
+			<h4>Follow us on</h4>
+			<div class="social-menu">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+			<div class="babusi">
+				<ul>
+					<li><a href="#"><img src="images/roof.png" alt="mastercard" class="ptsg"></i></a></li>
+					<li><a href="#"><img src="images/paypal.png" alt="paypal" class="ptsb"></i></a></li>
+					<li><a href="#"><img src="images/visa.png" alt="mastercard" class="ptsz"></i></a></li>
+					
+				</ul>	
+			</div>
+
+	</footer>
+</html>
